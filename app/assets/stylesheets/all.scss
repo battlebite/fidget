@@ -1,0 +1,75 @@
+$title-font: 'Bungee Hairline', cursive;
+$main-font: 'Noto Sans', sans-serif;
+$secondary-font: 'Poiret One', cursive;
+$color500: #FF5722;
+$color700: #E64A19;
+$material-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+html, body {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  // Top Title Bar
+  .titleBar {
+    position: relative;
+    background-color: $color700;
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    font-family: $title-font;
+    font-size: 5rem;
+    box-shadow: $material-shadow;
+    text-align: center;
+    i {
+      position: absolute;
+      font-size: 5rem;
+      padding-top: 10px;
+      padding-right: 10px;
+      right: 0;
+    }
+
+  }
+  .navBar {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    background-color: $color500;
+    box-shadow: $material-shadow;
+    font-family: $secondary-font;
+    padding-top: 20px;
+    &:nth-of-type(2) {
+      right: 0;
+    }
+    &:link, &:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 4rem;
+      cursor: auto;
+    }
+  }
+  .footerBar {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    background-color: $color700;
+    font-family: $secondary-font;
+    text-align: center;
+    bottom: 0;
+    p {
+      position: absolute;
+      margin: 0;
+      left: 0;
+    }
+    a {
+      position: absolute;
+      margin: 0;
+      right: 20px;
+    }
+  }
+}

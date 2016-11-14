@@ -1,0 +1,27 @@
+
+<div class="bodyWrapper">
+  <table>
+    <% @games.each do |game| %>
+    <tbody class="gameContainer">
+      <!-- Game Name -->
+        <tr>
+          <td class="gameName"><%= game.name %></td>
+        </tr>
+        <!-- Game Preview and link to game -->
+        <tr>
+          <td class="gameImage"><a href="<%= game.source %>"><img src="<%= game.preview %>" alt="Preview image for <%= game.name %>"></a></td>
+        </tr>
+        <!-- Game Genre, author, then description -->
+        <tr>
+          <td class="gameAuthor"><%= game.author %></td>
+          <td class="gameGenre"><%= game.genre %></td>
+          <td class="gameDescription"><%= game.description %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Game', new_game_path %>
+</div>

@@ -1,0 +1,38 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.bodyWrapper {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  font-size: 4rem;
+  width: 100%;
+}
+.gameContainer {
+  width: 100%;
+  height: 500px;
+}
+.field{
+  text-align: center;
+
+  input {
+    width: 80%;
+    height: 50px;
+    background: lighten(lightgrey, 15);
+    font-size: 2rem;
+    margin-top: 20px;
+  } //input
+} //.field
+.actions {
+  text-align: center;
+
+  input {
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    background: lighten(orange, 30);
+  } //input
+} //.actions
+#formContainer {
+  margin-top: 100px;
+}
